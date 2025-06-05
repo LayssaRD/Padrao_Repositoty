@@ -22,7 +22,6 @@ public class Gerenciador_Catalogo_Produtos
             Console.Write("Escolha uma opção: ");
 
             opcao = int.TryParse(Console.ReadLine(), out int temp) ? temp : -1;
-            //Console.Clear();
 
             switch (opcao)
             {
@@ -75,7 +74,7 @@ public class Gerenciador_Catalogo_Produtos
 
         foreach (var p in produtos)
         {
-            Console.WriteLine($"{p.Id} - {p.Nome} - R$ {p.Preco} - Estoque: {p.Estoque}");
+            Console.WriteLine($"ID: {p.Id} - Nome: {p.Nome} - Preço: R$ {p.Preco} - Estoque: {p.Estoque}");
         }
     }
 

@@ -1,7 +1,11 @@
 using Repository.Entidade;
+
 namespace Repository.Interfaces;
 
-public interface IRepositorio<T> where T: class, IEntidade
+public interface IRepositorio<T> where T : class, IEntidade
 {
     void Adicionar(T entidade);
+    List<T> ObterTodos();
+    T? ObterPorId(Guid id);
+    bool Remover(Guid id);
 }

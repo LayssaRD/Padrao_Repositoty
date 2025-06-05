@@ -1,4 +1,3 @@
-using System;
 using Repository.Entidade;
 using Repository.Interfaces;
 using System.Text.Json;
@@ -58,5 +57,27 @@ public class GenericJsonRepositorio<T> : IRepositorio<T> where T : class, IEntid
             Console.WriteLine($"Erro ao carregar {typeof(T).Name}:{ex.Message}");
             return [];
         }
+    }
+
+    public List<T> ObterTodos()
+    {
+        return _entidades;
+    }
+
+    public T? ObterPorId(Guid id)
+    {
+        return _entidades.FirstOrDefault(e => e.Id == id);
+    }
+
+    public bool Remover(Guid id)
+    {
+        var entidade = _entidades.FirstOrDefault(e => e.Id == id);
+        if (entidade != null)
+        {
+            _entidades.Remove(entidade);
+            SalvarNoArquivo();
+            return true;
+        }
+        return false;
     }
 }
