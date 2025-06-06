@@ -1,7 +1,6 @@
-using System;
-using Gerenciador_Biblioteca_de_Musica.Entidade;
+using GenericRepository.Entidade;
 
-namespace Gerenciador_Biblioteca_de_Musica.Interfaces;
+namespace GenericRepository.Interfaces;
 
 public interface IRepository<T> where T : class, IEntidade
 {

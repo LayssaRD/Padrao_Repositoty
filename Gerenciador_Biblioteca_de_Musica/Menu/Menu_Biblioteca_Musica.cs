@@ -1,4 +1,4 @@
-using Gerenciador_Biblioteca_de_Musica.Implementacoes;
+using GenericRepository.Implementacoes;
 using Gerenciador_Biblioteca_de_Musica.Model;
 
 namespace Gerenciador_Biblioteca_de_Musica.Menu;

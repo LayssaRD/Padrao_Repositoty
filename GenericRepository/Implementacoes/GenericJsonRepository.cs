@@ -1,8 +1,8 @@
-using Gerenciador_Biblioteca_de_Musica.Entidade;
-using Gerenciador_Biblioteca_de_Musica.Interfaces;
+using GenericRepository.Entidade;
+using GenericRepository.Interfaces;
 using System.Text.Json;
 
-namespace Gerenciador_Biblioteca_de_Musica.Implementacoes;
+namespace GenericRepository.Implementacoes;
 
 public class GenericJsonRepository<T> : IRepository<T> where T : class, IEntidade
 {

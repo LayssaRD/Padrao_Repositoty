@@ -1,4 +1,4 @@
-using Gerenciador_Biblioteca_de_Musica.Entidade;
+using GenericRepository.Entidade;
 
 namespace Gerenciador_Biblioteca_de_Musica.Model;
 
