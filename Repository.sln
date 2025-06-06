@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gerenciador_Biblioteca_de_M
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gerenciador_Catalogo_Produtos", "Gerenciador_Catalogo_Produtos\Gerenciador_Catalogo_Produtos.csproj", "{EB236478-5650-422F-AC20-5E9811431755}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gerenciador_Catalogo_Filmes", "Gerenciador_Catalogo_Filmes\Gerenciador_Catalogo_Filmes.csproj", "{21F8052A-9DA8-4531-AFDD-1F4F43FBA653}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -55,6 +57,18 @@ Global
 		{EB236478-5650-422F-AC20-5E9811431755}.Release|x64.Build.0 = Release|Any CPU
 		{EB236478-5650-422F-AC20-5E9811431755}.Release|x86.ActiveCfg = Release|Any CPU
 		{EB236478-5650-422F-AC20-5E9811431755}.Release|x86.Build.0 = Release|Any CPU
+		{21F8052A-9DA8-4531-AFDD-1F4F43FBA653}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21F8052A-9DA8-4531-AFDD-1F4F43FBA653}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21F8052A-9DA8-4531-AFDD-1F4F43FBA653}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{21F8052A-9DA8-4531-AFDD-1F4F43FBA653}.Debug|x64.Build.0 = Debug|Any CPU
+		{21F8052A-9DA8-4531-AFDD-1F4F43FBA653}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{21F8052A-9DA8-4531-AFDD-1F4F43FBA653}.Debug|x86.Build.0 = Debug|Any CPU
+		{21F8052A-9DA8-4531-AFDD-1F4F43FBA653}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21F8052A-9DA8-4531-AFDD-1F4F43FBA653}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21F8052A-9DA8-4531-AFDD-1F4F43FBA653}.Release|x64.ActiveCfg = Release|Any CPU
+		{21F8052A-9DA8-4531-AFDD-1F4F43FBA653}.Release|x64.Build.0 = Release|Any CPU
+		{21F8052A-9DA8-4531-AFDD-1F4F43FBA653}.Release|x86.ActiveCfg = Release|Any CPU
+		{21F8052A-9DA8-4531-AFDD-1F4F43FBA653}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
