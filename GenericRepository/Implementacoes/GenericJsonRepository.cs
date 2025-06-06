@@ -55,7 +55,7 @@ public class GenericJsonRepository<T> : IRepository<T> where T : class, IEntidad
         catch (Exception ex)
         {
             Console.WriteLine($"Erro ao carregar {typeof(T).Name}:{ex.Message}");
-            return [];
+            return new List<T>();
         }
     }
 
