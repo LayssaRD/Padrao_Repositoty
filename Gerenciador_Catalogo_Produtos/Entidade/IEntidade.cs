@@ -1,4 +1,6 @@
-namespace Repository.Entidade;
+using System;
+
+namespace Gerenciador_Catalogo_Produtos.Entidade;
 
 public interface IEntidade
 {

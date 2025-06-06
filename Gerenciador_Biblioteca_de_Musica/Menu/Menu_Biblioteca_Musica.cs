@@ -1,42 +1,13 @@
-using System;
-using Repository.Modelos;
-using Repository.Implementacoes;
+using Gerenciador_Biblioteca_de_Musica.Implementacoes;
+using Gerenciador_Biblioteca_de_Musica.Model;
 
-namespace Repository.Menus;
+namespace Gerenciador_Biblioteca_de_Musica.Menu;
 
-public class Gerenciador_Biblioteca_de_Musica
+public class Menu_Biblioteca_Musica
 {
-    private static readonly GenericJsonRepositorio<Musica> _repo = new();
+    private static readonly GenericJsonRepository<Musica> _repo = new();
 
-    public static void Executar()
-    {
-        int opcao;
-        do
-        {
-            Console.WriteLine("\n===== MENU MÚSICAS =====");
-            Console.WriteLine("1 - Adicionar Música");
-            Console.WriteLine("2 - Listar Músicas");
-            Console.WriteLine("3 - Buscar por ID");
-            Console.WriteLine("4 - Remover Música");
-            Console.WriteLine("0 - Sair");
-            Console.Write("Escolha uma opção: ");
-
-            opcao = int.TryParse(Console.ReadLine(), out int temp) ? temp : -1;
-
-            switch (opcao)
-            {
-                case 1: Adicionar(); break;
-                case 2: Listar(); break;
-                case 3: BuscarPorId(); break;
-                case 4: Remover(); break;
-                case 0: Console.WriteLine("Saindo..."); break;
-                default: Console.WriteLine("Opção inválida."); break;
-            }
-
-        } while (opcao != 0);
-    }
-
-    private static void Adicionar()
+    public static void Adicionar()
     {
         Console.Write("Título: ");
         var titulo = Console.ReadLine();
@@ -63,7 +34,7 @@ public class Gerenciador_Biblioteca_de_Musica
         Console.WriteLine("Música adicionada com sucesso.");
     }
 
-    private static void Listar()
+    public static void Listar()
     {
         var musicas = _repo.ObterTodos();
         if (!musicas.Any())
@@ -78,7 +49,7 @@ public class Gerenciador_Biblioteca_de_Musica
         }
     }
 
-    private static void BuscarPorId()
+    public static void BuscarPorId()
     {
         Console.Write("Digite o ID da música: ");
         var id = Guid.Parse(Console.ReadLine()!);
@@ -94,7 +65,7 @@ public class Gerenciador_Biblioteca_de_Musica
         }
     }
 
-    private static void Remover()
+    public static void Remover()
     {
         Console.Write("Digite o ID da música a remover: ");
         var id = Guid.Parse(Console.ReadLine()!);
@@ -104,4 +75,3 @@ public class Gerenciador_Biblioteca_de_Musica
             Console.WriteLine("Música não encontrada.");
     }
 }
-

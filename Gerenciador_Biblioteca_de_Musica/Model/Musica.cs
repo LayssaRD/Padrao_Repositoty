@@ -1,6 +1,6 @@
-using Repository.Entidade;
+using Gerenciador_Biblioteca_de_Musica.Entidade;
 
-namespace Repository.Modelos;
+namespace Gerenciador_Biblioteca_de_Musica.Model;
 
 public class Musica : IEntidade
 {
@@ -10,3 +10,4 @@ public class Musica : IEntidade
     public string Album { get; set; } = string.Empty;
     public TimeSpan Duracao { get; set; }
 }
+

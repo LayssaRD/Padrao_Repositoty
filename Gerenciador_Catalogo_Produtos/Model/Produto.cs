@@ -1,6 +1,6 @@
-using Repository.Entidade;
+using Gerenciador_Catalogo_Produtos.Entidade;
 
-namespace Repository.Modelos;
+namespace Gerenciador_Catalogo_Produtos.Model;
 
 public class Produto : IEntidade
 {

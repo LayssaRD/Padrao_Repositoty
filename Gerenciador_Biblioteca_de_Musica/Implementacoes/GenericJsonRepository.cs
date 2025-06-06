@@ -1,15 +1,15 @@
-using Repository.Entidade;
-using Repository.Interfaces;
+using Gerenciador_Biblioteca_de_Musica.Entidade;
+using Gerenciador_Biblioteca_de_Musica.Interfaces;
 using System.Text.Json;
 
-namespace Repository.Implementacoes;
+namespace Gerenciador_Biblioteca_de_Musica.Implementacoes;
 
-public class GenericJsonRepositorio<T> : IRepositorio<T> where T : class, IEntidade
+public class GenericJsonRepository<T> : IRepository<T> where T : class, IEntidade
 {
     private readonly string _caminhoArquivo;
     private List<T> _entidades;
 
-    public GenericJsonRepositorio(string? caminhoArquivo = null)
+    public GenericJsonRepository(string? caminhoArquivo = null)
     {
         _caminhoArquivo = caminhoArquivo ?? $"{typeof(T).Name.ToLower()}s.json";
         _entidades = CarregarDoArquivo();
@@ -80,4 +80,5 @@ public class GenericJsonRepositorio<T> : IRepositorio<T> where T : class, IEntid
         }
         return false;
     }
+
 }

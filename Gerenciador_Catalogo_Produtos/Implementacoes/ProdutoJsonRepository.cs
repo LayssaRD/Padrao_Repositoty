@@ -1,8 +1,9 @@
-using Repository.Interfaces;
-using Repository.Modelos;
+using System;
+using Gerenciador_Catalogo_Produtos.Interfaces;
+using Gerenciador_Catalogo_Produtos.Model;
 using System.Text.Json;
 
-namespace Repository.Implementacoes;
+namespace Gerenciador_Catalogo_Produtos.Implementacoes;
 
 public class ProdutoJsonRepository : IProdutoRepository
 {

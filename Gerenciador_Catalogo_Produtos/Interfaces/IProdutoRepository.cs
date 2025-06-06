@@ -1,6 +1,7 @@
-using Repository.Modelos;
+using System;
+using Gerenciador_Catalogo_Produtos.Model;
 
-namespace Repository.Interfaces;
+namespace Gerenciador_Catalogo_Produtos.Interfaces;
 
 public interface IProdutoRepository
 {
