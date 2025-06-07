@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gerenciador_Registro_de_Pac
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gerenciador_de_Arquivos_Digitais", "Gerenciador_de_Arquivos_e_Sistemas\Gerenciador_de_Arquivos_Digitais.csproj", "{1DD5873C-11FA-4EB5-8E97-44A137F7707C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gerenciador_Inventario_TI", "Gerenciador_Inventario_TI\Gerenciador_Inventario_TI.csproj", "{D1890DE0-960C-43A5-90D2-9BB01D6A197B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -111,6 +113,18 @@ Global
 		{1DD5873C-11FA-4EB5-8E97-44A137F7707C}.Release|x64.Build.0 = Release|Any CPU
 		{1DD5873C-11FA-4EB5-8E97-44A137F7707C}.Release|x86.ActiveCfg = Release|Any CPU
 		{1DD5873C-11FA-4EB5-8E97-44A137F7707C}.Release|x86.Build.0 = Release|Any CPU
+		{D1890DE0-960C-43A5-90D2-9BB01D6A197B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1890DE0-960C-43A5-90D2-9BB01D6A197B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1890DE0-960C-43A5-90D2-9BB01D6A197B}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{D1890DE0-960C-43A5-90D2-9BB01D6A197B}.Debug|x64.Build.0 = Debug|Any CPU
+		{D1890DE0-960C-43A5-90D2-9BB01D6A197B}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{D1890DE0-960C-43A5-90D2-9BB01D6A197B}.Debug|x86.Build.0 = Debug|Any CPU
+		{D1890DE0-960C-43A5-90D2-9BB01D6A197B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1890DE0-960C-43A5-90D2-9BB01D6A197B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1890DE0-960C-43A5-90D2-9BB01D6A197B}.Release|x64.ActiveCfg = Release|Any CPU
+		{D1890DE0-960C-43A5-90D2-9BB01D6A197B}.Release|x64.Build.0 = Release|Any CPU
+		{D1890DE0-960C-43A5-90D2-9BB01D6A197B}.Release|x86.ActiveCfg = Release|Any CPU
+		{D1890DE0-960C-43A5-90D2-9BB01D6A197B}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
